@@ -68,7 +68,8 @@ app.engine('hbs', handlebars.engine(
                 return (num + 10)
             },
             strong: function(options){
-                return '<li style="color:blue">'+options.fn(this)+'</li>'
+                // return '<li style="color:blue">'+options.fn(this)+'</li>'
+                return '<strong>'+options.fn(this)+'</strong>'
             }
         },
         defaultLayout: 'main',
